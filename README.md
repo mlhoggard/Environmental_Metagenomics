@@ -33,17 +33,38 @@ For each, detailed steps are provided together with helper scripts developed to 
 
 These are intended as the first point of call for processing raw data, including qc, trimming, filtering, and up to the point of assembly (excluding RNAseq data). Separate workflows are provided based on: 
 
-* **1A. Illumina HiSeq whole genome sequencing (WGS) (metagenome)**
-  * Can run directly into: 2.Prokaryote_metagenomics_Binning and 3.Prokaryote_genomics; 4A.Viromics_WGS
-* **1B. Illumina HiSeq (RNAseq) whole transcriptome sequencing (WTS) (metatranscriptome)**
-  * Can be used for read mapping back to generated metagenome-assembled genomes or assembled culture isolate genomes to generate gene transcription coverage profiles.
-  * Can also run into 4B.Viromics_WTS to investigate RNA viruses (WiP)
-* **1C. Oxford Nanopore long read sequencing of individual cultured prokaryote isolates** 
-  * (Not strictly environmental *metagenomics*, but included here as we use this data in concert with our metagenomics work).
-  * Can run directly into: 3.Prokaryote_genomics; 4A.Viromics_WGS
-* **1D. Oxford Nanopore long read whole genome sequencing (metagenome)**
-  * Placeholder; may be developed in future. 
-  * Should in principle be able to run into 2.Prokaryote_metagenomics_Binning and 3.Prokaryote_genomics; 4A.Viromics_WGS
+#### 1A. Illumina HiSeq whole genome sequencing (WGS) (metagenome)
+
+This section can run directly into: 
+
+* 2.Prokaryote_metagenomics_Binning and 3.Prokaryote_genomics
+* 4A.Viromics_WGS
+
+#### 1B. Illumina HiSeq (RNAseq) whole transcriptome sequencing (WTS) (metatranscriptome)
+
+Trimmed and filtered reads can be used for read mapping back to, for example, generated metagenome-assembled genomes or viral genomes to generate gene transcription coverage profiles.
+
+This section can run directly into: 
+
+* 4B.Viromics_WTS to investigate RNA viruses (WiP)
+
+#### 1C. Oxford Nanopore long read sequencing of individual cultured prokaryote isolates
+
+Not strictly environmental *metagenomics*, but included here as we use this data in concert with our metagenomics work.
+
+This section can run directly into: 
+
+* 3.Prokaryote_genomics
+* 4A.Viromics_WGS
+
+#### 1D. Oxford Nanopore long read whole genome sequencing (metagenome)
+
+Placeholder; may be developed in future. 
+
+This section should in principle be able to run into: 
+
+* 2.Prokaryote_metagenomics_Binning and 3.Prokaryote_genomics
+* 4A.Viromics_WGS
 
 ### 2.Prokaryote_metagenomics_Binning
 
