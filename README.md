@@ -29,7 +29,7 @@ For each, detailed steps are provided together with helper scripts developed to 
 
 ## Brief description
 
-#### 1.Data_processing_and_assembly
+### 1.Data_processing_and_assembly
 
 These are intended as the first point of call for processing raw data, including qc, trimming, filtering, and up to the point of assembly (excluding RNAseq data). Separate workflows are provided based on: 
 
@@ -45,21 +45,21 @@ These are intended as the first point of call for processing raw data, including
   * Placeholder; may be developed in future. 
   * Should in principle be able to run into 2.Prokaryote_metagenomics_Binning and 3.Prokaryote_genomics; 4A.Viromics_WGS
 
-#### 2.Prokaryote_metagenomics_Binning
+### 2.Prokaryote_metagenomics_Binning
 
 Workflow for recovering metagenome-assembled genomes from trimmed, filtered, and assembled WGS sequencing data. This workflow picks up from the end of 1A above. 
 
-#### 3.Prokaryote_genomics
+### 3.Prokaryote_genomics
 
-Workflow for processing prokaryote genome files (isolate genomes generated via 1C above, or metagenome-assembled genomes generated via steps 1A and 2 above) to generate genome statistics, taxonomy prediction, and gene prediction and annotation. 
+Workflow for processing prokaryote genome files to generate genome statistics, taxonomy prediction, and gene prediction and annotation. This workflow picks up from the end of step 2 (having recovered metagenome-assembled genomes) OR 1C (Nanopore seqencing of isolate genomes) above.
 
-#### 4A.Viromics_WGS
+### 4A.Viromics_WGS
 
-Workflow for processing assembled environmental whole genome sequencing (WGS) data (Illumina HiSeq) for the study of DNA viruses, with a specific focus on phage (viruses infecting bacteria and archaea). This includes: identifying viral sequences; gene prediction and annotation; WGS and/or WTS read mapping to generate genome and/or transcriptome coverage profiles; taxonomy prediction; and (prokaryote) host prediction. 
+Workflow for processing assembled environmental whole genome sequencing (WGS) data (Illumina HiSeq) for the study of DNA viruses, with a specific focus on phage (viruses infecting bacteria and archaea). This includes: identifying viral sequences; gene prediction and annotation; WGS and/or WTS read mapping to generate genome and/or transcriptome coverage profiles; taxonomy prediction; and (prokaryote) host prediction. This workflow picks up from the end of 1A OR 1C above. 
 
-#### 4A.Viromics_WTS (WiP)
+### 4A.Viromics_WTS (WiP)
 
-In development: Workflow for processing environmental whole transcriptome sequencing (WTS) data (Illumina HiSeq) for the study of RNA viruses. This includes: assembly of trimmed and filtered RNAseq data; identifying RNA viral sequences; gene prediction and annotation. 
+In development: Workflow for processing environmental whole transcriptome sequencing (WTS) data (Illumina HiSeq) for the study of RNA viruses. This includes: assembly of trimmed and filtered RNAseq data; identifying RNA viral sequences; gene prediction and annotation. This workflow picks up from the end of 1B above. 
 
 ----
 
