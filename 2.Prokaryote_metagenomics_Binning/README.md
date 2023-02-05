@@ -2,6 +2,6 @@
 
 ----
 
-WiP
+Placeholder section. See the GA Environmental Genomics repo: https://github.com/GenomicsAotearoa/environmental_metagenomics
 
 ----

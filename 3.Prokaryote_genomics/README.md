@@ -6,9 +6,12 @@
 
 Comprehensive workflow for prokaryote genomics based on assembled individual isolate genomes or metagenome-assembled genomes (MAGs). 
 
-Detailed steps are provided together with a set of helper scripts developed to handle a number of intermediary steps and/or basic output tables. These docs are for educational purposes, but with the intent to also ultimately develop a *Nextflow* or *Snakemake* pipeline to handle all of these steps in a semi- or fully-automated manner.
+Detailed steps are provided together with a set of helper scripts developed to handle a number of intermediary steps and/or basic output tables.
 
-The workflow outlined here picks up from the end of Environmental_Metagenomics/1.Data_processing_and_assembly/1A.Metagenomics_HiSeq or Environmental_Metagenomics/1.Data_processing_and_assembly/1C.Prokaryote_isolate_sequencing_Nanopore.
+The workflow outlined here picks up from the end of either of the following: 
+
+- Environmental_Metagenomics/1.Data_processing_and_assembly/1A.Metagenomics_HiSeq 
+- Environmental_Metagenomics/1.Data_processing_and_assembly/1C.Prokaryote_isolate_sequencing_Nanopore
 
 Starting with assembled contigs, this workflow includes:
 
