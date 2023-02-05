@@ -6,9 +6,12 @@
 
 Comprehensive workflow for processing assembled environmental whole genome sequencing (WGS) data (Illumina HiSeq) for the study of DNA viruses, with a specific focus on phage (viruses infecting bacteria and archaea). 
 
-Detailed steps are provided together with a set of helper scripts developed to handle a number of intermediary steps and/or basic output tables. These docs are for educational purposes, but with the intent to also ultimately develop a *Nextflow* or *Snakemake* pipeline to handle all of these steps in a semi- or fully-automated manner.
+Detailed steps are provided together with a set of helper scripts developed to handle a number of intermediary steps and/or basic output tables.
 
-The workflow outlined here picks up from the end of the Environmental_Metagenomics/1.Data_processing_and_assembly/1A.Metagenomics_HiSeq docs.
+The workflow outlined here picks up from the end of the either of the following:
+
+- Environmental_Metagenomics/1.Data_processing_and_assembly/1A.Metagenomics_HiSeq
+- Environmental_Metagenomics/1.Data_processing_and_assembly/1C.Prokaryote_isolate_sequencing_Nanopore
 
 Starting with assembled contigs, this workflow includes:
 
